@@ -1,0 +1,186 @@
+--- 2A: Singleton Pattern ---
+Cart 1 contents: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Cart 2 contents: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Are cart1 and cart2 the same instance? true
+
+
+--- 2B: Factory Pattern ---
+Book: "The Pragmatic Programmer" by Unknown - $35
+Electronic: Unknown XPS 15 - $1500
+Mouse - $10
+
+
+--- 3A: Decorator Pattern ---
+Final Price: $70
+Final Description: Design Patterns, gift wrapped, with extended warranty
+
+
+--- 3B: Facade Pattern ---
+[Inventory] Checking stock for products: 1, 3...
+[Inventory] All items are in stock.
+[Payment] Processing payment of $200 for user user-123...
+[Payment] Payment successful.
+[Shipping] Arranging shipment for user user-123 to 123 Main St...
+[Shipping] Shipment arranged successfully.
+
+
+--- 4A: Strategy Pattern ---
+Flat Rate Shipping Cost: $10
+Weight-Based Shipping Cost: $7.5
+
+
+--- 4B: Command Pattern ---
+Initial Cart: [ { id: 1, name: 'Laptop', price: 1200 } ]
+file:///C:/Users/Tran%20Gia%20Long/Desktop/csw303/e-commerce-patterns/patterns/behavioral/Command.js:42      
+        this.cartService.addProduct(product);
+                                    ^
+
+ReferenceError: product is not defined
+    at AddToCartCommand.execute (file:///C:/Users/Tran%20Gia%20Long/Desktop/csw303/e-commerce-patterns/patterns/behavioral/Command.js:42:37)
+    at CommandInvoker.executeCommand (file:///C:/Users/Tran%20Gia%20Long/Desktop/csw303/e-commerce-patterns/patterns/behavioral/Command.js:9:17)
+    at file:///C:/Users/Tran%20Gia%20Long/Desktop/csw303/e-commerce-patterns/index.js:83:9
+    at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:671:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.11.1
+
+C:\Users\Tran Gia Long\Desktop\csw303\e-commerce-patterns>node index.js
+--- E-Commerce Design Patterns Simulation ---
+===========================================
+
+--- 2A: Singleton Pattern ---
+Cart 1 contents: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Cart 2 contents: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Are cart1 and cart2 the same instance? true
+
+
+--- 2B: Factory Pattern ---
+Book: "The Pragmatic Programmer" by Unknown - $35
+Electronic: Unknown XPS 15 - $1500
+Mouse - $10
+
+
+--- 3A: Decorator Pattern ---
+Final Price: $70
+Final Description: Design Patterns, gift wrapped, with extended warranty
+
+
+--- 3B: Facade Pattern ---
+[Inventory] Checking stock for products: 1, 3...
+[Inventory] All items are in stock.
+[Payment] Processing payment of $200 for user user-123...
+[Payment] Payment successful.
+[Shipping] Arranging shipment for user user-123 to 123 Main St...
+[Shipping] Shipment arranged successfully.
+
+
+--- 4A: Strategy Pattern ---
+Flat Rate Shipping Cost: $10
+Weight-Based Shipping Cost: $7.5
+
+
+--- 4B: Command Pattern ---
+Initial Cart: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Cart after executing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+Cart after undoing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+
+
+--- 4B: Command Pattern ---
+Initial Cart: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Cart after executing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+Cart after undoing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+Initial Cart: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Cart after executing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+Cart after undoing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+Cart after undoing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+Cart after undoing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+
+]
+
+
+
+
+
+C:\Users\Tran Gia Long\Desktop\csw303\e-commerce-patterns>node index.js
+--- E-Commerce Design Patterns Simulation ---
+===========================================
+
+--- 2A: Singleton Pattern ---
+Cart 1 contents: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Cart 2 contents: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Are cart1 and cart2 the same instance? true
+
+
+--- 2B: Factory Pattern ---
+Book: "The Pragmatic Programmer" by Unknown - $35
+Electronic: Unknown XPS 15 - $1500
+Mouse - $10
+
+
+--- 3A: Decorator Pattern ---
+Final Price: $70
+Final Description: Design Patterns, gift wrapped, with extended warranty
+
+
+--- 3B: Facade Pattern ---
+[Inventory] Checking stock for products: 1, 3...
+[Inventory] All items are in stock.
+[Payment] Processing payment of $200 for user user-123...
+[Payment] Payment successful.
+[Shipping] Arranging shipment for user user-123 to 123 Main St...
+[Shipping] Shipment arranged successfully.
+
+
+--- 4A: Strategy Pattern ---
+Flat Rate Shipping Cost: $10
+Weight-Based Shipping Cost: $7.5
+
+
+--- 4B: Command Pattern ---
+Initial Cart: [ { id: 1, name: 'Laptop', price: 1200 } ]
+Cart after executing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+Cart after undoing command: [
+  { id: 1, name: 'Laptop', price: 1200 },
+  Electronic { name: 'MacBook Pro', price: 2500, brand: 'Unknown' }
+]
+
+
+--- 4C: Observer Pattern ---
+Order order-456 status updated to: Processing
+Email: Order order-456 is now Processing.
+Dashboard: Order order-456 status updated to Processing.
+---
+Order order-456 status updated to: Shipped
+Email: Order order-456 is now Shipped.
